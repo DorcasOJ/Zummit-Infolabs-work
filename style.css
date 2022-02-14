@@ -3,7 +3,7 @@
 :root {
     --brand: #e7a20d;
     --body: rgba(196, 11, 196, 0.705);
-    --bg: rgb(112, 1, 112);
+    --bg: #9b029b /* #700170*/;
 }
 
 * {
@@ -14,7 +14,7 @@
 
 section {
     padding: 150px 0;
-    min-height: calc(90vh - 300px);
+    min-height: 70vh;
 }
 
 a {
@@ -22,7 +22,8 @@ a {
     color: var(--body);
 }
 
-a:hover {
+a:hover, 
+a:focus {
     color: var(--brand);
 }
 
@@ -81,9 +82,23 @@ a:hover {
     border-color: red;
 }
 
+/*HERO*/ 
+#hero{
+    background: linear-gradient(to right, rgb(155, 2, 155) , rgba(112, 1, 112, 0.5)), url('./images/img2\ \(2\).jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
 /*NAV BAR*/
 .navbar .navbar-nav .nav-link.active,
 #login .navbar .navbar-nav #login-link {
     color: var(--brand);
 }
+
+.navbar ul .nav-link,
+.navbar .navbar-brand {
+    color: #000;
+}
+
 
